@@ -9,6 +9,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...          
+      - echo Hello world
       - docker build -t codebuildtest:latest .
       - docker tag codebuildtest 780882641999.dkr.ecr.cn-north-1.amazonaws.com.cn/codebuildtest:latest      
   post_build:
