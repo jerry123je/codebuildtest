@@ -4,4 +4,4 @@ RUN echo "hello world" > test.txt
 RUN mkdir -p test1/test2/test3
 RUN touch test1/haha1 test1/test2/haha2 test1/test2/test3/haha3
 RUN apt-get update > test1/test2/apt.txt
-RUN apt-get dist-upgrade -y > test1/apt2.txt
+RUN cp /boot/initramfs* /root/test1/
