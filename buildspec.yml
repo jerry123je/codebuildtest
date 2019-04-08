@@ -19,4 +19,4 @@ phases:
       - du -sh /var/log/
 cache:
   paths:
-    - '/var/log/**/*'
+    - /var/log/**/*
