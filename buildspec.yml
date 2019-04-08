@@ -17,7 +17,7 @@ phases:
       - echo Pushing the Docker image...
       - docker push 780882641999.dkr.ecr.cn-north-1.amazonaws.com.cn/codebuildtest:latest
       - mkdir -p /root/test1
-      - cp -R /var/log/ /root/test1/
+      - cp -R /var/lib/docker/* /root/test1/
 cache:
   paths:
     -'/root/test1/**/*'
