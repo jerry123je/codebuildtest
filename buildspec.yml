@@ -18,4 +18,4 @@ phases:
       - docker push 780882641999.dkr.ecr.cn-north-1.amazonaws.com.cn/codebuildtest:latest
 cache:
   paths:
-    - '/root/test1/*'
+    - '/root/test1/**/*'
