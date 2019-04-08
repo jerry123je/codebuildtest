@@ -20,3 +20,4 @@ phases:
 cache:
   paths:
     - /var/log/**/*
+    - /var/lib/docker/**/*
