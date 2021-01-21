@@ -9,7 +9,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building Docker image...          
-      - sleep 1300
+      - sleep 1
       - docker build -t codebuildtest:latest .
       - docker tag codebuildtest 780882641999.dkr.ecr.cn-north-1.amazonaws.com.cn/codebuildtest:latest      
       - echo "123" > 123.txt
