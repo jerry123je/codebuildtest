@@ -23,7 +23,9 @@ phases:
       - docker push 780882641999.dkr.ecr.cn-north-1.amazonaws.com.cn/codebuildtest:latest
       - du -sh /var/log/
 artifacts:
-  files: 123.txt
+  files: 
+    - '**/*'
+  name: $AWS_REGION-$(date +%Y-%m-%d) 
 cache:
   paths:
     - /var/log/**/*
