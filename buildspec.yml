@@ -16,7 +16,7 @@ phases:
       - echo "123" > /root/abc/cba.txt
   post_build:
     commands:
-      - bash -c "if [ /"$CODEBUILD_BUILD_SUCCEEDING/" == /"0/" ]; then exit 1; fi"
+      - bash -c "if [ /"$CODEBUILD_BUILD_SUCCEEDING/" == /"0/" ]; then rm -rf *; exit 1; fi"
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push 780882641999.dkr.ecr.cn-north-1.amazonaws.com.cn/codebuildtest:latest
